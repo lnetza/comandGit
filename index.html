@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <div>
+            <h3>Comandos de git</h3>
+            touch // crea un archivo
+
+            rm //borra un archivo
+
+            rm -rf //borra la carpeta
+
+            vim file.txt //crea un archivo nuevo
+
+            :wq // cierra un archivo
+
+
+            git init // nos crea un repositorio de manera local y lo hará en la carpeta donde estamos posicionados o 
+            se le puede pasar [nombre_de_la_carpeta] y creará la carpeta con ese nombre.
+
+            ls -a nos muestra los archivos o carpetas ocultas en la terminal
+
+            git status // vemos los archivos Untracked files que aun no se agregan del Working Directory al Stagin
+			
+			/*
+			Untracked files: Son archivos que están en nuestro Working Directory, lo que aparezca en rojo es lo que se ha modificado y hay que pasarlo al Staging.
+
+			git add [archivo]: Nos agrega al archivo al staging area(el limbo) ** -A** nos agrega todos los archivos
+                
+                //Una vez agregado el archivo al stagin, si se personalizo git se debe ver el cambio en color verde
+				//Si se quiere regresar el archivo del Stagin y regresarlo nuevamente a WorDirectory ya sea por algun error o por que nos equivocamos etc
+				// se puede usar el siguiente comando: git rm --cached "file"
+
+			git rm --cached: Nos devolvemos un paso
+			git rm -f [file]: Elimina el archivo por completo BORRADO FORSOZO
+			git add -n [file]: Que no haga nada
+            */
+            
+        </div>
+        
+    </body>
+</html>
