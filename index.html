@@ -46,10 +46,57 @@
             <p><strong>-l </strong>nos muestra la lista de etiquetas</p>
             <p><strong>-f</strong>para renombrar</p>
             <p><strong>-d</strong>para borrar</p>
-            <p><strong></strong></p>
-            <p><strong></strong></p>
-             
+            <p><strong>En resumen los tipos de tag</strong></p>
+            <div>
+            <p>
+                <h4>–tag ligera</h4>
+                git tag 1.0 + "SHA" 
+                git tag 1.0 02512454212dfd2s...
+            </p>
+            <p>
+                <h4>**tag anotada</h4>
+                
+                git tag -a 1.0 -m 'version estable' 0251245421...
+                git tag -a "version" -m "mensaje" "sha"
+            </p> 
+            <p>  
+                <h4>*Opciones
+                **Borrar tags</h4>
+                
+                git tag -d 1.0
+                git tag -d "versíon"
+            </p> 
+            <p>   
+                <h4>**Renombrar tags</h4>
+                
+                git tag -f -a  0.1 'iniciando el proyecto' + sha
+            </p> 
+            <p>  
+                <h4>**Listar tags</h4>
+                
+                git tag -l
+            </p> 
+            <p>   
+                *Nota
+                Si no se coloca el sha al final del mensaje, el tag se colocorá al ultimo commit
+            </p>   
+            </div>
         </div>
+        <p><strong>git log --oneline</strong>: te pone el log de commits de manera resumida</p>
+        <p><strong>git log --oneline --graph</strong>: grafico de como va avanzando la historia del proyecto</p>
+        <p><strong>git log --oneline -3</strong>: ver solo 3 commits</p>
+        <p><strong>git log --oneline -1</strong>: ver último commit</p>
+        <h4>Revisando cambios de versiones</h4>
+        <p><strong>git diff</strong>: para comparar los cambios de la version actual vs un commit anterior ejemplo: git diff + elshadeuncommit</p>
+        <p><strong>git diff</strong>: git diff 0.5 0.3 comparar tags</p>
+        <p><strong>git diff</strong>: git diff [version 1] [version 2] ejemplo: git diff 8c340c5 43da8a9 para comparar 2 SHA o commits</p>
+        <p><strong>git reset --soft</strong> git reset --soft masElSHA</p>
+        <p><strong>git reset --mixed</strong></p>
+        <p><strong>git reset --hard</strong></p>
+        <p><strong>git reset</strong> Hay que tener en cuenta que si usas git reset --soft
+            Tienes 10 commits y borras el numero 7, los commits 8, 9 y 10 también se borran, y tendras un nuevo commit que tomara el numero 8.
+            </p>
         
+        <p><strong></strong></p>
     </body>
 </html>
