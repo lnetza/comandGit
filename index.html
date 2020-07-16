@@ -91,11 +91,11 @@
         <p><strong>git diff</strong>: git diff 0.5 0.3 comparar tags</p>
         <p><strong>git diff</strong>: git diff [version 1] [version 2] ejemplo: git diff 8c340c5 43da8a9 para comparar 2 SHA o commits</p>
         <p><strong>git reset --soft</strong> git reset --soft masElSHA</p>
-        <p><strong>git reset --mixed</strong></p>
+        <p><strong>git reset</strong> Hay que tener en cuenta que si usas git reset --soft los archivos bajan o se quedan en el stagin listos para hacer commit nuevamente
+            Tienes 10 commits y borras el numero 7, los commits 8, 9 y 10 también se borran, y tendras un nuevo commit que tomara el numero 8 y el 9 y 10 se fusionan con el 8.
+        </p>
+        <p><strong>git reset --mixed</strong> git reset --mixed masElSha con esto los commits en ves de bajar al stagin se bajan a WorkDirectory</p>
         <p><strong>git reset --hard</strong></p>
-        <p><strong>git reset</strong> Hay que tener en cuenta que si usas git reset --soft
-            Tienes 10 commits y borras el numero 7, los commits 8, 9 y 10 también se borran, y tendras un nuevo commit que tomara el numero 8.
-            </p>
         
         <p><strong></strong></p>
     </body>
