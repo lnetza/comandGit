@@ -23,18 +23,18 @@
             <p><strong> ls -a</strong> nos muestra los archivos o carpetas ocultas en la terminal</p>
 
             <p><strong> git status</strong> // vemos los archivos Untracked files que aun no se agregan del Working Directory al Stagin</p>
-			
-			<p>
-			Untracked files: Son archivos que están en nuestro Working Directory, lo que aparezca en rojo es lo que se ha modificado y hay que pasarlo al Staging.</p>
+            
+            <p>
+            Untracked files: Son archivos que están en nuestro Working Directory, lo que aparezca en rojo es lo que se ha modificado y hay que pasarlo al Staging.</p>
 
-			<p><strong> git add [archivo] </strong>: Nos agrega al archivo al staging area(el limbo) ** -A** nos agrega todos los archivos
+            <p><strong> git add [archivo] </strong>: Nos agrega al archivo al staging area(el limbo) ** -A** nos agrega todos los archivos
                 
                 //Una vez agregado el archivo al stagin, si se personalizo git se debe ver el cambio en color verde
-				//Si se quiere regresar el archivo del Stagin y regresarlo nuevamente a WorDirectory ya sea por algun error o por que nos equivocamos etc
-				// se puede usar el siguiente comando: git rm --cached "file"
+                //Si se quiere regresar el archivo del Stagin y regresarlo nuevamente a WorDirectory ya sea por algun error o por que nos equivocamos etc
+                // se puede usar el siguiente comando: git rm --cached "file"
             </p>
-			<p><strong> git rm --cached </strong>: Nos devolvemos un paso</p>
-			<p><strong> git rm -f [file] </strong>: Elimina el archivo por completo BORRADO FORSOZO</p>
+            <p><strong> git rm --cached </strong>: Nos devolvemos un paso</p>
+            <p><strong> git rm -f [file] </strong>: Elimina el archivo por completo BORRADO FORSOZO</p>
             <p><strong> git add -n [file] </strong>: Que no haga nada</p>
             <p><strong> Git commit -m [“mensaje”]</strong>Es bueno ser descriptivos con el mensaje para saber lo que se hizo en ese commit y para informar al resto de personas.</p>
             <p><strong> –amend</strong> :concatena nuevos cambios con cambios previos es decir haciendo una análogia si envie un e-mail pero se me olvido adjuntar 
@@ -95,7 +95,8 @@
             Tienes 10 commits y borras el numero 7, los commits 8, 9 y 10 también se borran, y tendras un nuevo commit que tomara el numero 8 y el 9 y 10 se fusionan con el 8.
         </p>
         <p><strong>git reset --mixed</strong> git reset --mixed masElSha con esto los commits en ves de bajar al stagin se bajan a WorkDirectory</p>
-        <p><strong>git reset --hard</strong></p>
+        <p><strong>git reset --hard</strong> git reset --hard [SHA]: regresa hasta el commit del [SHA] que se le especifique, --hard modifica a nivel de disco u archivo, pero tambien
+        se puede volver a restaurar siempre y cuando tengamos la lista de SHAs o el último SHA commiteado pero poder regresar a él, especificando git reset --hard [últimoSHA o al SHAdeseado] </p>
         
         <p><strong></strong></p>
     </body>
