@@ -139,15 +139,25 @@
         <p><strong>git merge [rama]</strong> : Nos permite mezclar los cambios realizados en dicha rama con la rama en la que estamos.</p>
         <p><strong>fast-forward</strong> :los mezcla automáticamente</p>
         <p><strong>recursive/auto-merging</strong>: ambas ramas salieron al mismo tiempo y hay algo nuevo en la rama que la otra no recuerda, por eso hace la mezcla recursiva.
-            manual merge: nos va a tocar decirle a git específicamente los cambios que queremos mezclar</p>
-        <p><strong></strong></p>
-        <p><strong></strong></p>
-        
+            manual merge: nos va a tocar decirle a git específicamente los cambios que queremos mezclar
+        </p>
         <p><strong>CONFLICT: </strong>cuando al hacer el git merge, ambas ramas no pueden mezclarse porque las dos modifican una misma parte del código.
              Por lo tanto, toca manualmente resolver el conflicto y decidir con cual o qué nos quedamos. Se debe hacer un commit una vez resuelto.
         </p>
+        <p><strong>git rebase</strong> : hace prácticamente lo mismo que merge, cambiamos la historia de nuestro proyecto sin crear bifurcaciones del proyecto. 
+            Es mejor usar merge Usar solo git rebase de manera local.
+        </p>
+        <p><strong>git rebase -i</strong> : de manera interactiva, nos abrira el editor que tengamos definido en la configuración de git para poder especificar el commit.
+        </p>
+        <p><strong>git stash</strong>: esto nos va permitir guardar los cambios hechos del staging area de la rama en la que nos encontremos, es decir si aun no queremos hacer el commit de estos
+        cambios a la rama podemos usar stash para guardar momentaneamente esos cambios de esta manera si nos movemos a otra rama esos cambios que aun no estan confirmados como commit y 
+        se encuentran aun el stagin area no apareceran a la rama a la que nos movimos</p>
+        <P><strong>git stash list</strong>: nos muestra la lista de stash que tengamos.</P>
+        <p><strong>git stash drop stash@{numero}</strong>: nos permite borrar un stash</p>
+        <p><stron>git stash apply</stron>: aplicamos el último cambio</p>
 
 
+        
         <footer>
             <p><center>-Comandos básicos de git-</center></p>>
             <img src="footer-img.png">
