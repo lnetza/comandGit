@@ -161,8 +161,22 @@
         </p>
         <p><strong>Generar llave SSH comando:</strong> ssh-keygen -t rsa -b 4096 -C "tuemail.com"</p>
         <p>Se abre github y se pega en settings</p>
-        <p><strong>git remote (Añadiendo un repositorio remoto a uno local)</strong>
-            Tenemos que crear una conexión entre tu repositorio local y tu repositorio remoto para que puedas compartirlo con la comunidad. Para esto vamos a usar un nuevo comando que en este caso es git remote. Por convención lo nombramos “origin”. Para borrarlo podemos usar git remote remove y el nombre del repositorio.
+        <p><strong>git remote (Añadiendo un repositorio remoto o en la nube a uno local)</strong>
+        Tenemos que crear una conexión entre tu repositorio local y tu repositorio remoto para que puedas compartirlo con la comunidad.
+        Para esto vamos a usar un nuevo comando que en este caso es git remote. Por convención lo nombramos “origin”. Para borrarlo podemos 
+        usar git remote remove y el nombre del repositorio.
+        </p>
+        <p>
+        <strong>Añadiendo repositorio remoto</strong>
+        Para lograrlo debemos copiar el link que nos arroja la opción “clonar o descargar” de la página de nuestro repositorio en github y 
+        utilizar el comando: git remote add origin [linkDelRepositorio] Si no mostro ningún mensaje de error, quiere decir que podemos trabajar 
+        remotamente desde el repositorio.
+        <p>
+        Para verificar que tengamos nuestro repositorio correctamente enlazado usamos:git remote -v
+        Para remover nuestro repositorio remoto usamos:</p>
+        <strong>
+        git remote remove origin</strong>
+        origin: Nombre del repositorio remoto como referencia al local le ponemos, por convención le ponemos origin.
         </p>
         <footer>
             <p><center>-Comandos básicos de git-</center></p>>
