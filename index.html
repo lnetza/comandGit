@@ -210,13 +210,33 @@
 
         <blockquote><strong> evitar lo anterior, es mejor crear el repositorio en github y hacer lo siguiente:</strong></blockquote>
         
-        <p>
+        
         <ul>
         <li>git init [nombre-proyecto-github]</li>
         <li>cd [nombre-proyecto-github]</li>
         <li>git remote add origin [SSH/HTTPS]</li>
         <li>git pull origin master
 
+        </ul>
+        <p>
+        <strong>git push (Enviando cambios al repositorio remoto)</strong>
+
+        <p>Para enviar nuestro código al repositorio remoto vamos a usar el comando git push. Así logramos que otras personas tengan acceso a nuestro proyecto.
+        Cuando esto termine tendremos acceso a nuestro trabajo desde la plataforma de GitHub.
+        Lo primero que debemos hacer es enviar nuestros tags en el proyecto.
+        también recordemos que podemos eviar ramas, lo que también posdemos hacer a través del uso del comando git push [nombre de la rama].
+        </p>
+        Comando para subir cambios a github:
+        <ul>
+            <li>git push origin master</li>
+
+        Tambien podemos enviar los tags:
+            <li>git push origin master --tags</li>
+        
+
+        Podemos enviar otras ramas:
+            <li>git push origin [otra_rama]</li>
+        
         </ul>
         </p>
 
